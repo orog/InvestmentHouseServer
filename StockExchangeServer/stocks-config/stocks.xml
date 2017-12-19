@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="org.afeka.sweng2017.stockexchange.server.util.StockInitList">
+		<property name="stocks">
+			<set>
+				<bean class="org.afeka.sweng2017.stockexchange.server.commands.Stock">
+					<constructor-arg value="IBM"/>
+					<constructor-arg value="International Business Machines Corporation"/>
+					<constructor-arg value="160"/>
+				</bean>
+
+				<bean class="org.afeka.sweng2017.stockexchange.server.commands.Stock">
+					<constructor-arg value="GOOG"/>
+					<constructor-arg value="Alphabet Inc."/>
+					<constructor-arg value="770"/>
+				</bean>
+
+				<bean class="org.afeka.sweng2017.stockexchange.server.commands.Stock">
+					<constructor-arg value="AMZN"/>
+					<constructor-arg value="Amazon.com, Inc."/>
+					<constructor-arg value="750"/>
+				</bean>
+
+				<bean class="org.afeka.sweng2017.stockexchange.server.commands.Stock">
+					<constructor-arg value="ORCL"/>
+					<constructor-arg value="Oracle Corporation"/>
+					<constructor-arg value="38"/>
+				</bean>
+
+				<bean class="org.afeka.sweng2017.stockexchange.server.commands.Stock">
+					<constructor-arg value="FB"/>
+					<constructor-arg value="Facebook, Inc."/>
+					<constructor-arg value="115"/>
+				</bean>
+			</set>
+		</property>
+	</bean>
+
+</beans>
