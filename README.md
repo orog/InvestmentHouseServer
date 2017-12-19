@@ -8,3 +8,6 @@ The Stock Market Application will need to run on jdk 1.8.0_131:
 
 *for unix run from terminal: 
 java -cp stockexchange.server-0.0.1-SNAPSHOT.jar:lib/* org.afeka.sweng2017.stockexchange.server.Application';
+
+
+Client : https://github.com/orog/InvestmentHouseClient
